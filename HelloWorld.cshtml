@@ -1,0 +1,28 @@
+﻿@model WebApplication1.Models.HelloWorldModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Homework Assignment</title>
+    <style>
+        img{
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        My name is @Html.DisplayFor(model=>model.Name). I was born on @Html.DisplayFor(model=>model.DOB) in @Html.DisplayFor(model=>model.HomeTown). 
+    </div>
+    <div>
+        <img src="@Html.DisplayFor(model=>model.PathToImage)"/>
+    </div>
+
+</body>
+</html>
